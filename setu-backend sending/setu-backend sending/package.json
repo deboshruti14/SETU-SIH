@@ -1,0 +1,20 @@
+{
+  "name": "setu-backend",
+  "version": "1.0.0",
+  "description": "Project SETU (SIH26043) - backend API, AI triage pipeline and SQLite persistence",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "reseed": "node -e \"require('fs').existsSync('setu.db') && require('fs').unlinkSync('setu.db'); require('./server.js')\""
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

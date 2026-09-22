@@ -1,0 +1,5 @@
+node_modules/
+setu.db
+setu.db-wal
+setu.db-shm
+*.log
